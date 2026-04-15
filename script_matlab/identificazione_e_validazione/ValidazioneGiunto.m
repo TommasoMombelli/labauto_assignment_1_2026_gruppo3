@@ -4,11 +4,11 @@
 % Carico i risultati del test
 
 clc;clear all;close all;
-joint_number=1;
+joint_number=3;
 load(["model_joint"+joint_number])
 
 model_name = 'gantry_portal_sea_soft';
-folder_path = fullfile('..', 'labauto_assignment_1_2026', model_name, 'tests');
+folder_path = fullfile('..','..', model_name, 'tests');
 
 tests=dir(fullfile(folder_path, "validation_chirp_experiment_joint"+joint_number+"*.mat"));  
 
@@ -56,6 +56,7 @@ for itest=1:length(tests)
     bode(modello_continuo,bode_opts)
     drawnow
     xlim(sort([w0 w1]))
+    legend
 end
 
 %%
