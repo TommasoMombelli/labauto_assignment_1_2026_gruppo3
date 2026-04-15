@@ -36,7 +36,7 @@ dof = robot.get_input_number()
 Tc = robot.get_sampling_period()
 
 # define chirp
-Duration = 20.0 # seconds
+Duration = 20.0 # seconds  prima era 20
 t = np.arange(0, Duration + Tc, Tc)  # Ensure inclusion of Duration if possible
 
 
