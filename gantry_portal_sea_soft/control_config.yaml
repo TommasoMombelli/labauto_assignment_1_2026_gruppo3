@@ -15,7 +15,7 @@ controller:
             zeros_damping: 0.04
             poles_damping: 0.9
       outer:
-        Kp: 5.0
+        Kp: 60.5869
         Ki: 0.0
         Kd: 0.0
     - name: "joint2"
