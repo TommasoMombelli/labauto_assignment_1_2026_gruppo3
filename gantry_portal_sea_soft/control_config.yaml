@@ -15,16 +15,21 @@ controller:
             zeros_damping: 0.04
             poles_damping: 0.9
       outer:
-        Kp: 60.5869
+        Kp: 60.59
         Ki: 0.0
         Kd: 0.0
     - name: "joint2"
       inner:
-        Kp: 50.0
-        Ki: 1.0
+        Kp: 559.66
+        Ki: 4477.3
         Kd: 0.0
+        filters_on_error_signal:
+          - type: NotchFilter
+            natural_frequency: 630
+            zeros_damping: 0.04
+            poles_damping: 0.9
       outer:
-        Kp: 5.0
+        Kp: 110.75
         Ki: 0.0
         Kd: 0.0
     - name: "joint3"
