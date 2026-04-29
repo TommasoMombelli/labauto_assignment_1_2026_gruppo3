@@ -29,11 +29,16 @@ controller:
         Kd: 0.0
     - name: "joint3"
       inner:
-        Kp: 30.0
-        Ki: 15.0
+        Kp: 325.43
+        Ki: 3254.3
         Kd: 0.0
+        filters_on_error_signal:
+          - type: NotchFilter
+            natural_frequency: 640
+            zeros_damping: 0.04
+            poles_damping: 0.9
       outer:
-        Kp: 15.0
+        Kp: 123.13
         Ki: 0.0
         Kd: 0.0
 
