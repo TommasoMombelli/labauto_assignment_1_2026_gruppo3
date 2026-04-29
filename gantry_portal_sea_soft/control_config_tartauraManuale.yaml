@@ -6,8 +6,8 @@ controller:
   cascade_controllers:
     - name: "joint1"
       inner:
-        Kp: 338.5521
-        Ki: 0.0339
+        Kp: 338.13
+        Ki: 1521.6
         Kd: 0.0
         filters_on_error_signal:
           - type: NotchFilter
@@ -20,8 +20,8 @@ controller:
         Kd: 0.0
     - name: "joint2"
       inner:
-        Kp: 560.3569
-        Ki: 0.0560
+        Kp: 559.66
+        Ki: 4477.3
         Kd: 0.0
         filters_on_error_signal:
           - type: NotchFilter
@@ -34,8 +34,8 @@ controller:
         Kd: 0.0
     - name: "joint3"
       inner:
-        Kp: 325.8327
-        Ki: 0.0326
+        Kp: 325.43
+        Ki: 3254.3
         Kd: 0.0
         filters_on_error_signal:
           - type: NotchFilter
